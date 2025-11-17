@@ -1,0 +1,86 @@
+.card-body{
+    background-color: aliceblue;
+}
+                footer .social-links a:hover {
+                    transform: translateY(-3px);
+                    transition: transform 0.3s ease;
+                    display: inline-block;
+                }
+
+                .hover-link:hover {
+                    color: #667eea !important;
+                }
+
+                footer h5 {
+                    font-weight: 400;
+                    position: relative;
+                    padding-bottom: 10px;
+                }
+
+                :root {
+            --primary-color: #667eea;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .profile-section {
+            margin-top: -50px;
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+
+        .profile-image-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 5rem;
+            font-weight: bold;
+            box-shadow: 0 10px 0px rgba(0,0,0,0.2);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--primary-color);
+            position: relative;
+        }
+
+
+        .contact-box {
+            padding: 25px;
+        }
+
+
+        .mission-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+
+        .mission-card h5 {
+            color: var(--secondary-color);
+            font-weight:bold;
+            margin-bottom: 15px;
+        }
+
