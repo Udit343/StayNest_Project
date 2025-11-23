@@ -51,7 +51,8 @@ const sessionOptions = {
     expires: Date.now() + 7 * 24 * 60 * 60 * 1000, // 7 days
     maxAge: 7 * 24 * 60 * 60 * 1000,
     httpOnly: true,
-    // secure: true, // Uncomment in production with HTTPS
+    secure: true,         
+    sameSite: "none",
   },
 };
 
