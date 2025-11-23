@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from "./Pages/contexts/AuthContext";
 import Navbar from "./Pages/Navbar";
-import Footer from "./Pages/footer";
+import Footer from "./Pages/Footer";
 import Front from "./Pages/Home/Front";
 import Content from './Pages/About/Content';
 import ShowPage from './Pages/Show/ShowPage';
