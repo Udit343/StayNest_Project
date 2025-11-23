@@ -14,7 +14,7 @@ function ShowPage() {
   }, [id]);
 
   const fetchListing = () => {
-    fetch(`http://localhost:8080/api/listings/${id}`)
+    fetch(`https://staynest-project-1.onrender.com/api/listings/${id}`)
       .then((res) => res.json())
       .then((data) => setListing(data))
       .catch((err) => console.error(err));

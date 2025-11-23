@@ -41,7 +41,7 @@ function Edit() {
       return;
     }
 
-    fetch(`http://localhost:8080/api/listings/${id}`)
+    fetch(`https://staynest-project-1.onrender.com/api/listings/${id}`)
       .then((res) => res.json())
       .then((data) => {
         if (data.owner && user && data.owner._id !== user.id) {
@@ -105,7 +105,7 @@ function Edit() {
         formDataToSend.append('image', image);
       }
 
-      const res = await fetch(`http://localhost:8080/api/listings/Edit/${id}`, {
+      const res = await fetch(`https://staynest-project-1.onrender.com/api/listings/Edit/${id}`, {
         method: 'PUT',
         credentials: 'include',
         body: formDataToSend,

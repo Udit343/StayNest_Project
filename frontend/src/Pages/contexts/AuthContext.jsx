@@ -20,7 +20,7 @@ export const AuthProvider = ({ children }) => {
 
   const checkAuthStatus = async () => {
     try {
-      const res = await fetch('http://localhost:8080/api/user/status', {
+      const res = await fetch('https://staynest-project-1.onrender.com/api/user/status', {
         credentials: 'include'
       });
       const data = await res.json();
@@ -37,7 +37,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (username, password) => {
     try {
-      const res = await fetch('http://localhost:8080/api/user/login', {
+      const res = await fetch('https://staynest-project-1.onrender.com/api/user/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
@@ -59,7 +59,7 @@ export const AuthProvider = ({ children }) => {
 
   const signup = async (username, email, password) => {
     try {
-      const res = await fetch('http://localhost:8080/api/user/signup', {
+      const res = await fetch('https://staynest-project-1.onrender.com/api/user/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
@@ -81,7 +81,7 @@ export const AuthProvider = ({ children }) => {
 
   const logout = async () => {
     try {
-      await fetch('http://localhost:8080/api/user/logout', {
+      await fetch('https://staynest-project-1.onrender.com/api/user/logout', {
         method: 'POST',
         credentials: 'include'
       });

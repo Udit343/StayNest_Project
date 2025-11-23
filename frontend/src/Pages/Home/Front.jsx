@@ -7,7 +7,7 @@ function Front() {
   const [searchParams] = useSearchParams();
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/listings/all")
+    fetch("https://staynest-project-1.onrender.com/api/listings/all")
       .then(res => res.json())
       .then(data => {
         setListings(data);

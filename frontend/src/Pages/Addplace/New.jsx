@@ -34,7 +34,7 @@ function New() {
     try {
       const formData = new FormData(e.target);
 
-      const res = await fetch("http://localhost:8080/api/listings/add", {
+      const res = await fetch("https://staynest-project-1.onrender.com/api/listings/add", {
         method: "POST",
         credentials: "include", //  ADDED: Send cookies with request
         body: formData

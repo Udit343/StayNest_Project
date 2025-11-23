@@ -10,7 +10,7 @@ function Listing({ listing }) {
       return;
 
     try {
-      const res = await fetch(`http://localhost:8080/api/listings/delete/${listing._id}`, {
+      const res = await fetch(`https://staynest-project-1.onrender.com/api/listings/delete/${listing._id}`, {
         method: "DELETE",
         credentials: "include"
       });

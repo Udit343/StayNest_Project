@@ -20,7 +20,7 @@ function Review({ listingId, reviews, onReviewAdded }) {
     setLoading(true);
 
     try {
-      const res = await fetch(`http://localhost:8080/api/listings/${listingId}/reviews`, {
+      const res = await fetch(`https://staynest-project-1.onrender.com/api/listings/${listingId}/reviews`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -49,7 +49,7 @@ function Review({ listingId, reviews, onReviewAdded }) {
 
     try {
       const res = await fetch(
-        `http://localhost:8080/api/listings/${listingId}/reviews/${reviewId}`,
+        `https://staynest-project-1.onrender.com/api/listings/${listingId}/reviews/${reviewId}`,
         {
           method: "DELETE",
           credentials: "include"
